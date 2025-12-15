@@ -77,15 +77,22 @@
             margin: auto;
         }
 
-        .hero button {
+        .hero .btn-catalogo {
+            display: inline-block;
             margin-top: 2rem;
             padding: 1rem 2.5rem;
-            border: none;
             border-radius: 30px;
             background-color: var(--accent);
             color: white;
             font-size: 1rem;
-            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero .btn-catalogo:hover {
+            background-color: #16a34a;
+            transform: scale(1.05);
         }
 
         section {
@@ -191,29 +198,37 @@
 </header>
 
 <section class="hero">
-    <h2>La mejor tecnología para tu mundo digital</h2>
-    <p>Compra equipos de computación modernos, confiables y con soporte profesional.</p>
-    <button>Comprar ahora</button>
+    <h2>Soluciones tecnológicas para estudio, trabajo y gaming</h2>
+    <p>
+        En <strong>TecnoStore</strong> ofrecemos equipos de computación modernos y confiables.
+        Encuentra laptops, PCs y monitores ideales para potenciar tu rendimiento diario,
+        con garantía y soporte técnico especializado.
+    </p>
+    <a href="catalogo.html" class="btn-catalogo">Ver catálogo</a>
 </section>
 
 <section id="productos">
     <div class="section-title">
         <h3>Productos destacados</h3>
+        <p>Una selección de nuestros equipos más vendidos y mejor valorados por nuestros clientes.</p>
     </div>
     <div class="products">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop Gamer">
             <h4>Laptop Gamer</h4>
+            <p>Alto rendimiento para juegos, diseño gráfico y multitarea exigente.</p>
             <p class="price">$1,250.00</p>
         </div>
         <div class="card">
             <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5" alt="PC de Escritorio">
             <h4>PC Profesional</h4>
+            <p>Equipo ideal para oficina, programación y uso profesional continuo.</p>
             <p class="price">$980.00</p>
         </div>
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Monitor">
+            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Monitor Full HD">
             <h4>Monitor Full HD</h4>
+            <p>Pantalla de alta definición para mayor comodidad y productividad.</p>
             <p class="price">$320.00</p>
         </div>
     </div>
@@ -221,30 +236,34 @@
 
 <section id="beneficios" class="features">
     <div class="section-title">
-        <h3>¿Por qué elegirnos?</h3>
+        <h3>¿Por qué elegir TecnoStore?</h3>
+        <p>Nos enfocamos en brindarte confianza, calidad y una experiencia de compra segura.</p>
     </div>
     <div class="features-grid">
         <div class="feature-box">
             <i class="fa-solid fa-shield-halved"></i>
-            <h4>Garantía</h4>
-            <p>Productos originales y certificados.</p>
+            <h4>Garantía y calidad</h4>
+            <p>Todos nuestros productos cuentan con garantía oficial y control de calidad.</p>
         </div>
         <div class="feature-box">
             <i class="fa-solid fa-truck-fast"></i>
-            <h4>Envíos rápidos</h4>
-            <p>Entrega segura a todo el país.</p>
+            <h4>Envíos confiables</h4>
+            <p>Realizamos envíos rápidos y seguros a cualquier parte del país.</p>
         </div>
         <div class="feature-box">
             <i class="fa-solid fa-headset"></i>
-            <h4>Soporte técnico</h4>
-            <p>Asistencia especializada 24/7.</p>
+            <h4>Soporte especializado</h4>
+            <p>Nuestro equipo técnico te asesora antes y después de tu compra.</p>
         </div>
     </div>
 </section>
 
 <section class="newsletter" id="contacto">
-    <h3>Recibe nuestras ofertas</h3>
-    <p>Suscríbete y mantente al día con las últimas novedades tecnológicas.</p>
+    <h3>Mantente informado</h3>
+    <p>
+        Recibe promociones exclusivas, lanzamientos y consejos tecnológicos
+        directamente en tu correo electrónico.
+    </p>
 </section>
 
 <footer>
