@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | TecnoStore</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #0a2540;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0a2540, #3b82f6);
+            color: white;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .title {
+            text-align: center;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .title p {
+            color: #6b7280;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-6px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .producto h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .producto p {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .precio {
+            margin: 0.8rem 0;
+            color: #22c55e;
+            font-weight: 600;
+        }
+
+        .producto button {
+            padding: 0.6rem 1.5rem;
+            border: none;
+            border-radius: 20px;
+            background-color: #3b82f6;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #0a2540;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2><i class="fa-solid fa-computer"></i> TecnoStore</h2>
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+</header>
+
+<section class="title">
+    <h2>Catálogo de Productos</h2>
+    <p>Explora nuestra amplia variedad de equipos de computación</p>
+</section>
+
+<section class="catalogo">
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+        <h4>Laptop Gamer</h4>
+        <p>Rendimiento avanzado para juegos y tareas exigentes.</p>
+        <div class="precio">$1,250.00</div>
+        <button>Agregar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5" alt="PC Escritorio">
+        <h4>PC de Escritorio</h4>
+        <p>Ideal para oficina, estudios y trabajo profesional.</p>
+        <div class="precio">$980.00</div>
+        <button>Agregar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Monitor">
+        <h4>Monitor Full HD</h4>
+        <p>Mayor comodidad visual y productividad.</p>
+        <div class="precio">$320.00</div>
+        <button>Agregar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d8" alt="Teclado">
+        <h4>Teclado Mecánico</h4>
+        <p>Precisión y durabilidad para gamers y programadores.</p>
+        <div class="precio">$120.00</div>
+        <button>Agregar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1584270354949-1f6c1f4a2c63" alt="Mouse">
+        <h4>Mouse Gamer</h4>
+        <p>Alta precisión y diseño ergonómico.</p>
+        <div class="precio">$60.00</div>
+        <button>Agregar</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1612815154858-60aa8c1b29b8" alt="Auriculares">
+        <h4>Auriculares Gamer</h4>
+        <p>Sonido envolvente para una experiencia total.</p>
+        <div class="precio">$85.00</div>
+        <button>Agregar</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 TecnoStore | Catálogo de Productos</p>
+</footer>
+
+</body>
+</html>
